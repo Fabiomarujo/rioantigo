@@ -1,0 +1,33 @@
+h1 {
+    color:blueviolet;
+    font-size: 30px;
+    padding: 2px;
+    
+}
+
+h3 {
+    color: red;
+    font-size: 21px;
+    padding: 2px;
+}
+p {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    font-size: 16px;
+    text-align: justify; 
+    margin-top: 0px;
+    margin-bottom: 5px;
+    margin-right: 150px;
+    margin-left: 0px;
+    padding: 2px;
+}
+
+p::first-letter{
+    margin-left: 35px;
+}
+.imagem-redimensionada {
+    width: 300px;
+    height: 200px;
+}
+#fundo{
+    background-color: rgb(229, 240, 199);
+}

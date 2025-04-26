@@ -6,6 +6,7 @@
     <link href="menu_logo.css" rel="stylesheet"> 
     <link href="stylos.css" rel="stylesheet"> 
     <link href="img/python_16.png" rel="shortcut icon">
+    <link href="contato.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -13,33 +14,52 @@
 </head>
 <body>
     <header class="cabecalho">
+        <div class="caixa">
+            <h1 class="logo">
+                <img src="img/rioicon_125x125.png" alt="logo do site">
+            </h1>
+            <nav class="hmenu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li> 
+                    <li><a href="historia.html">História</a></li>           
+                    <li><a href="fotos.html">Fotos</a></li>  
+                    <li><a href="contato.html">Contato</a></li>  
+                    <li><a href="sobre.html">Sobre</a></li>  
+                </ul>
+            </nav>
+        </div>
     </header>
     <main class="conteudo-principal">
         <div class="titulo-principal">
             <h2>Converse conosco</h2>
         </div>
-        <div>
+        <div class="divform">
             <form name="frmContato" id="idContato" action="" method="POST">
-                <div>
-                    <label for="idNome"><strong>Nome:</strong></label>
+             <fieldset>  
+                <div class="label">
+                    <label for="idNome">Nome:</label>
                 </div>
-                <input id="idNome" type="text" name="nome" maxlength="70" placeholder="Digite seu nome" required><br>
-                <div>
-                    <label for="idEmail"><strong>E-mail:</strong></label>
+                <input id="idNome" type="text" name="nome" maxlength="70" placeholder="Digite seu nome" required>
+                
+                <div class="label">
+                    <label for="idEmail">E-mail:</label>
                 </div>
-                <input id="idEmail" type="email" name="email" maxlength="100" placeholder="Digite seu email" required><br>
-                <div>
-                    <label for="idTelefone"><strong>Telefone:</strong></label>
+                <input id="idEmail" type="email" name="email" maxlength="100" placeholder="Digite seu email" required>
+                
+                <div class="label">
+                    <label for="idTelefone">Telefone:</label>
                 </div>
-                <input id="idTelefone" type="tel" name="telefone" placeholder="Digite seu telefone" required><br>
-                <div>
-                    <label><strong>Gênero:</strong></label>
+                <input id="idTelefone" type="tel" name="telefone" placeholder="Digite seu telefone" required>
+                
+                <div class="label">
+                    <label>Gênero:</label>
                 </div>
-                <input type="radio" name="generoe" value="F" id="idGeneroF"><label for="idGeneroF">Feminino</label>
-                <input type="radio" name="generoe" value="M" id="idGeneroM"><label for="idGeneroM">Masculino</label>
-                <input type="radio" name="generoe" value="O" id="idGeneroO"><label for="idGeneroO">Outros</label>
-                <div>
-                    <label id="idAssunto"><strong>Assunto:</strong></label>
+                <input type="radio" name="generoe" value="F" id="idGeneroF" class="radio"><label for="idGeneroF" class="label-radio">Feminino</label>
+                <input type="radio" name="generoe" value="M" id="idGeneroM" class="radio"><label for="idGeneroM" class="label-radio">Masculino</label>
+                <input type="radio" name="generoe" value="O" id="idGeneroO" class="radio"><label for="idGeneroO" class="label-radio">Outros</label>
+                
+                <div class="label">
+                    <label id="idAssunto">Assunto:</label>
                 </div>
                 <select name="assunto" id="idAssunto">
                     <option value="0">Selecione...</option>
@@ -48,15 +68,17 @@
                     <option value="S">Solicitação</option>
                     <option value="O">Outros</option>
                 </select>
-                <div>
-                    <label id="idMensagem"><strong>Mensagem:</strong></label>
-                </div>
-                <textarea row="10" cols="200" id="idMensagem" name="mensagem" placeholder="Preencha com a mensagem desejada"></textarea>
-                <div>
-                    <input tyupe="reset" value="Limpar">
-                    <input tyupe="submit" value="Enviar">
-                </div>
                 
+                <div class="label">
+                    <label id="idMensagem">Mensagem:</label>
+                </div>
+                <textarea row="10" cols="200" id="idMensagem" name="mensagem" placeholder="Preencha com a mensagem desejada" class="minhaTextArea"></textarea>
+                
+                <div class="botoes">
+                    <input type="reset" value="Limpar">
+                    <input type="submit" value="Enviar">
+                </div>
+            </fieldset>   
             </form>
         </div> 
 
